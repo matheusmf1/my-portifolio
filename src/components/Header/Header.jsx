@@ -7,6 +7,14 @@ import './header.css';
 
 export const Header = () => {
 
+  const dropMenu = ( e ) => {
+    console.log('ooi')
+    // let test = document.getElementById("menu");
+
+    // test.classList.toggle("subMenu")
+    // test.classList.toggle("menu")
+  }
+
   return(
   
     <Headroom>
@@ -18,7 +26,7 @@ export const Header = () => {
           <span className="grey-color">/&gt;</span>
         </a>
 
-        <input className="menu-btn" type="checkbox" id="menu-btn" />
+        <input className="menu-btn" type="checkbox" id="menu-btn" onClick={dropMenu}/>
 
         <label
           className="menu-icon"
@@ -28,7 +36,7 @@ export const Header = () => {
           <span className={"navicon"}></span>
         </label>
 
-        <ul className={"menu"}>
+        <ul className={"menu"} id="menu" >
           
           <li>
             <a href="#skills">Habilidades</a>
