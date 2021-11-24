@@ -3,9 +3,10 @@ import emoji from "react-easy-emoji";
 export const greetings = {
 	name: "Matheus Mandotti",
 	title: "Olá, eu sou o Matheus",
-	description:
-		"A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
-	resumeLink: "https://cv.hanzla.ga",
+	// description:
+	// 	"A passionate Full Stack Web Developer and Mobile App Developer having an experience of building Web applications with JavaScript / Reactjs / Nodejs / Python / Django / Flask and some other cool libraries and frameworks and Cross Platform Mobile Apps With Flutter.",
+	description: "Tenho 25 anos, amante de tecnologia e de um bom café. Se você contar sua ideia para 10 pessoas e 9 delas disser que você está maluco, provavelmente você está fazendo algo inovador. O que eu posso fazer para o seu negócio?",
+	resumeLink: "",
 };
 
 export const openSource = {
@@ -23,17 +24,18 @@ export const socialLinks = {
 export const skillsSection = {
 	title: "Minhas Habilidades",
 	subTitle:
-		"Arquiteto de Soluções, Design de Sistema, Especialista Cloud, Desenvolvedor Full Stack, Lider Técnico",
+		"Arquiteto de Soluções, Design de Sistemas, Especialista em AWS Cloud, Desenvolvedor Full Stack, lidero e gerencio um time técnico",
 	skills: [
 		emoji(
-			"⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+			"⚡ Desenvolvo Site para sua empresa, Aplicações Web de alto desempenho e aplicações mobile para Android e iOS"
 		),
 		emoji(
-			"⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"
+			"⚡ Uso dos recursos de Computação em Nuvem para deixar sua aplicação em alta disponibilidade, elasticidade e com integridade dos seus dados."
 		),
 		emoji(
-			"⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+			"⚡ Faço integração de sua aplicação com serviços de nuvem, como AWS e Firebase (Google)."
 		),
+
 	],
 
 	softwareSkills: [
@@ -43,12 +45,12 @@ export const skillsSection = {
 			fontAwesomeClassname: "logos:aws",
 		},
 		{
-			skillName: "Google-Cloud-Platform",
+			skillName: "Google Cloud",
 			fontAwesomeClassname: "logos:google-cloud",
 		},
 		{
-			skillName: "Azure",
-			fontAwesomeClassname: "logos:azure",
+			skillName: "Oracle Cloud",
+			fontAwesomeClassname: "logos:oracle",
 		},
 		{
 			skillName: "Firebase",
@@ -71,7 +73,6 @@ export const skillsSection = {
 			skillName: "ReactJs",
 			fontAwesomeClassname: "vscode-icons:file-type-reactjs",
 		},
-
 
 		{
 			skillName: "NodeJs",
@@ -96,7 +97,7 @@ export const skillsSection = {
 		},
 
 		{
-			skillName: "sql-database",
+			skillName: "Banco de Dados",
 			fontAwesomeClassname: "vscode-icons:file-type-sql",
 		},
 		{
@@ -132,35 +133,36 @@ export const SkillBars = [
 
 export const educationInfo = [
 	{
-		schoolName: "Harvard University",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
+		schoolName: "Instituto Mauá de Tecnologia",
+		subHeader: "Bacharel em Engenharia de Computação",
+		duration: "Fevereiro 2016 - Dezembro 2020",
+		desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
 		descBullets: [
 			"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
 			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
 		],
-	},
-	{
-		schoolName: "Harvard",
-		subHeader: "Master of Science in Computer Science",
-		duration: "September 2017 - April 2019",
-		desc: "Participated in the research of XXX and published 3 papers.",
-		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetfgur adipiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
-	},
-	{
-		schoolName: "Stanford University",
-		subHeader: "Bachelor of Science in Computer Science",
-		duration: "September 2013 - April 2017",
-		desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-		descBullets: [
-			"Lorem ipsum dolorfdg sit amet, consectetur adipiscing elit",
-		],
-	},
+	}
+
+	
 ];
+
+export const educationInfo2 = {
+  display: true, // Set false to hide this section, defaults to true
+  schools: [
+    {
+      logo: "../assets/img/logo_maua.png",
+			schoolName: "Instituto Mauá de Tecnologia",
+			subHeader: "Bacharel em Engenharia de Computação",
+			duration: "Fevereiro/2016 - Dezembro/2020",
+      desc: "Com especialização em algumas das seguintes áreas:",
+      descBullets: [
+				"Engenharia de Software",
+        "Computação em Nuvem",
+        "Metodologia Agil e cultura DevOps",
+      ]
+    }
+  ]
+};
 
 export const experience = [
 	{

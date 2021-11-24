@@ -3,12 +3,10 @@ import { React, Component } from "react";
 import PropTypes from "prop-types";
 
 import SEO from "../components/SEO";
-
-import Navigation from "../components/Navigation/Navigation";
-import Greetings from "../containers/Greetings";
-import Skills from "../containers/Skills";
-import Proficiency from "../containers/Proficiency";
-import Education from "../containers/Education";
+import Greetings from "../containers/Greetings/Greetings";
+import Skills from "../containers/Skills/Skills";
+import Proficiency from "../containers/Proficiency/Proficiency";
+import Education from "../containers/Education/Education";
 import Experience from "../containers/Experience";
 import Projects from "../containers/Projects";
 import Feedbacks from "../containers/Feedbacks";
@@ -35,7 +33,6 @@ export class Home extends Component {
 			<div>
 			{/* <SEO/> */}
 			<Header/>
-			{/* <Navigation /> */}
 			<Greetings />
 			<Skills />
 			<Proficiency />

@@ -19,6 +19,7 @@
 .headroom-wrapper {
   /* max-height: 100px; */
   max-height: 70px;
+  background-color: var(--darkBackground) !important;
 }
 
 /* header */
