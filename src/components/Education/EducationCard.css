@@ -29,13 +29,11 @@
 }
 
 .education-text-school {
-	margin: 0;
+	margin: 0px;
 	font-size: 28px;
 	font-weight: 700;
-	text-overflow: ellipsis;
-	overflow: hidden;
 	white-space: nowrap;
-	height: 27px;
+	/* height: 27px; */
 	color: #fff;
 }
 
@@ -107,7 +105,6 @@
 
 	.education-text-school {
 		font-size: 20px;
-		height: 23px;
 	}
 
 	.education-text-duration {

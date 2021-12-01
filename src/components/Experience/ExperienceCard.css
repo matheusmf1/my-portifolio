@@ -1,0 +1,18 @@
+.card__container {
+  flex: 1;
+  border-radius: 12px;
+  height: 615px;
+}
+
+.card__container--header {
+  border-radius: 12px 12px 0px 0px !important;
+}
+
+.card__content {
+  /* height: 540px; */
+  padding: 1rem;
+}
+
+.card__content--container {
+  padding: 15px;
+}

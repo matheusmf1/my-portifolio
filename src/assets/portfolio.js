@@ -165,37 +165,54 @@ export const educationInfo2 = {
 };
 
 export const experience = [
+
 	{
-		role: "Software Engineer",
-		company: "Google",
-		companylogo: "../assets/img/icons/common/google.svg",
-		date: "June 2018 – Present",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		role: "Tech Lead / Desenvolvedor FullStack Pleno",
+		company: "IBM",
+		companylogo: "../assets/img/icons/common/ibm.png",
+		backgroundColor: "rgb(28, 20, 28)",
+		date: "Agosto 2021 – Atual",
+		desc: "Responsável pela definição técnica de arquitetura e desenvolvimento para soluções em ambiente Cloud.",
 		descBullets: [
-			"Lorem ipsum dolor sit amet, consdfgectetur adipiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+			"Desenvolvedor FullStack, com hábilidades em Frontend e Backend.",
+			"Lidero o time ajudando nas definições técnicas e de negócios.",
 		],
 	},
 	{
-		role: "Front-End Developer",
-		company: "Github",
-		companylogo: "../assets/img/icons/common/github.svg",
-		date: "May 2017 – May 2018",
-		desc: "Lorem ipsum dolor sit amet, consefdctetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		role: "Arquiteto de Soluções",
+		company: "Amazon Web Services - AWS",
+		companylogo: "../assets/img/icons/common/aws.png",
+		backgroundColor: "#fc9c04",
+		date: "Setembro 2020 – Agosto 2021",
+		desc: "Como Arquiteto de Soluções ajudo os clientes a entenderem o que é e como iniciar sua jornada na Computação em Nuvem.",
+		descBullets: [
+			"Exploro a necessidade do cliente e ajudo a construir a melhor arquitetura para o seu negócio.",
+			"Desenvolvo provas de conceito, Workshops e Webinars.",
+			"Analiso e desenho a arquitetura do seu Workload.",
+			"Foi reconhecido pelo Time de Liderança por mostrar liderança, desempenho e obsessão pelo cliente.",
+			// "Desenvolvi uma aplicação Web totalmente Serverless para ajudar o time de vendas a encontrar novas oportunidades de negócio. Usando Microsserviços, Infraestrutura da AWS, Machine Learning e Infraestrutura como Código. Toda a aplicação baseou-se nos princípios de DevOps, entrega e desenvolvimento continuo, CI/CD.",
+		],
 	},
 	{
-		role: "Software Engineer Intern",
-		company: "Airbnb",
-		companylogo: "../assets/img/icons/common/airbnbLogo.png",
-		date: "Jan 2015 – Sep 2015",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-	},
+		role: "Desenvolvedor Android - Estagiário",
+		company: "SETIS - Automação e Sistemas",
+		companylogo: "../assets/img/icons/common/logo_setis.png",
+		backgroundColor: "#00006A",
+		date: "Setembro 2020 – Agosto 2021",
+		desc: "Atuei como desenvolvedor Android focado em soluções de ponto de captura para pagamentos.",
+		descBullets: [
+			"Coloquei em prática meus conhecimentos de Engenharia de Software e metodologia Agil time.",
+			// "Desenvolvi uma aplicação Web baseada na arquitetura MVC usando NodeJS and JavaScript para lidar com algumas tarefas internas de forma automatizada. Integrei esse projeto com a aplicação Android da empresa, facilitando os usuários a saberem o que estava sendo testado.",
+			"Tive contato com CI/CD, onde usei o Jenkins para desenvolver uma Pipeline para fazer build de alguns artefatos de forma automatizada.",
+			"Aprendi Kotlin e modernizei algumas aplicações da empresa, usando essa tecnologia."
+		],
+	}
 ];
 
 export const projects = [
 	{
-		name: "lorem ipsum",
-		desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua",
+		name: "ARgro",
+		desc: "Aplicativo que utiliza realizadade aumentada para facilitar o desenvolvimento de aplicaçõe no agronegócio.",
 		link: "https://example.com",
 	},
 	{
