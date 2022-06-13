@@ -2,11 +2,11 @@ import React from "react";
 import { experience } from "../assets/portfolio";
 import { Container, Row } from "reactstrap";
 import ExperienceCard from "../components/Experience/ExperienceCard.jsx";
-
+import {Fade} from "react-reveal";
 
 const Experience = () => {
 	return (
-		<section className="section section-lg">
+		<section className="section section-lg" id="experience">
 			<Container>	
 					<div className="d-flex p-4">
 						<div>
@@ -19,11 +19,13 @@ const Experience = () => {
 						</div>
 
 					</div>
+					<Fade left duration={500}>
 					<Row className="row-grid align-items-center">
 						 {experience.map((data, i) => {
 							return <ExperienceCard key={i} data={data} />;
 						})}
-					</Row>				
+					</Row>
+					</Fade>			
 			</Container>
 		</section>
 	);

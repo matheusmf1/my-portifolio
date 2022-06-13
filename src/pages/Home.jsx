@@ -10,37 +10,26 @@ import Education from "../containers/Education/Education";
 import Experience from "../containers/Experience";
 import Projects from "../containers/Projects";
 import Feedbacks from "../containers/Feedbacks";
-import GithubProfileCard from "../components/GithubProfileCard";
+import Contact from "../containers/Contact/Contact"
 
-import { openSource } from "../assets/portfolio";
 import { Header } from "../components/Header/Header";
 
 export class Home extends Component {
 
-	// constructor(props) {
-	// 	super(props);
-	// 	this.state = {gitData: []};
-	// }
-
-	// componentDidMount() {
-	// 	fetch(`https://api.github.com/users/${openSource.githubUserName}`)
-	// 	.then( (res) => res.json() )
-	// 	.then( (data) => { this.setState({ gitData: data })});
-	// }
-
 	render() {
 		return (
 			<div>
-			{/* <SEO/> */}
+			<SEO/>
 			<Header/>
 			<Greetings />
 			<Skills />
 			<Proficiency />
 			<Education />
 			<Experience />
+			{/* <Projects /> */}
 			{/* <Feedbacks /> */}
-			<Projects />
-			{/* <GithubProfileCard prof={this.state.gitData}/> */}
+			{/* <Contact/> */}
+
 		</div>
 		);
 	}

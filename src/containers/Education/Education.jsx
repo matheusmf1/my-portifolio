@@ -1,15 +1,13 @@
 import React from "react";
-import EducationCard2 from "../../components/Education/EducationCard2";
 import EducationCard from "../../components/Education/EducationCard";
-import { educationInfo2 } from "../../assets/portfolio";
 import { educationInfo } from "../../assets/portfolio";
-import { Container, Row, Col } from "reactstrap";
+import { Container } from "reactstrap";
 
 import './education.css';
 
 const Education = () => {
 	return (
-		<section className="section pb-8 bg-gradient-info my-5">
+		<section className="section pb-8 bg-gradient-info my-5" id="education">
 			<Container>
 
 				<div className="d-flex px-3">
@@ -25,23 +23,9 @@ const Education = () => {
 
 				</div>
 
-				{/* <Row className="row-grid align-items-center education__item--center">
-					{educationInfo.map((info) => {
-						return (
-							<Col
-								className="order-lg-1"
-								lg="6"
-								key={info.schoolName}
-							>
-								<EducationCard education={info} />
-							</Col>
-						);
-					})}
-				</Row> */}
-
 				<div className="education-card-container">
-					{educationInfo2.schools.map((school, index) => (
-						<EducationCard2 key={index} school={school} />
+					{educationInfo.schools.map((school, index) => (
+						<EducationCard key={index} school={school} />
 					))}
 				</div>
 			

@@ -31,32 +31,25 @@ export const Header = () => {
         <ul className="menu">
           
           <li>
+            <a href="#greetings">Inicio</a>
+          </li>
+
+          <li>
             <a href="#skills">Habilidades</a>
           </li>
         
           <li>
-            <a href="#experience">Work Experiences</a>
+            <a href="#education">Educação</a>
           </li>
         
           <li>
-            <a href="#opensource">Open Source</a>
+            <a href="#experience">Experiência</a>
           </li>
-        
+
           <li>
-            <a href="#achievements">Achievements</a>
+            <a href="#projects">Projetos</a>
           </li>
-        
-          <li>
-            <a href="#blogs">Blogs</a>
-          </li>
-        
-          <li>
-            <a href="#talks">Talks</a>
-          </li>
-        
-          <li>
-            <a href="#contact">Contact Me</a>
-          </li>
+
         </ul>
       </header>
     </Headroom>

@@ -8,7 +8,7 @@ import './Skills.css'
 
 const Skills = () => {
 	return (
-		<Container className="text-center my-2 section">
+		<Container className="text-center my-2 section" id="skills">
 			<h1 className="h1">{skillsSection.title}</h1>
 			<p className="lead">{skillsSection.subTitle}</p>
 

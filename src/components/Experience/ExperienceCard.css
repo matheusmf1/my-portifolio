@@ -6,6 +6,12 @@
 
 .card__container--header {
   border-radius: 12px 12px 0px 0px !important;
+  padding: 1rem !important;
+}
+
+.card__header--text {
+  color: #fff;
+  margin: 0px;
 }
 
 .card__content {

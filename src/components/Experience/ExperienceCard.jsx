@@ -49,7 +49,7 @@ const ExperienceCard = ({ data }) => {
 				</Color> */}
 
 				<CardHeader style={{ background: data.backgroundColor }} className="card__container--header">
-					<h5 className="text-white">{data.company}</h5>
+					<h5 className="card__header--text">{data.company}</h5>
 				</CardHeader>
 
 				

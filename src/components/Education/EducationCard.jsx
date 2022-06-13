@@ -1,33 +1,78 @@
-import React from "react";
-import { Card, CardBody, Badge } from "reactstrap";
+import React, {createRef} from "react";
+import {Fade, Slide} from "react-reveal";
+import "./EducationCard.css";
 
+import maua_logo from '../../assets/img/logo_maua.png';
 
-const EducationCard = ({ education }) => {
-	return (
-			<Card className="card-lift--hover shadow mt-4">
-				<CardBody>
-					<div className="d-flex px-3">
-						<div className="pl-4">
-							<h5 className="text-info">
-								{education.schoolName}
-							</h5>
-							<h6>{education.subHeader}</h6>
-							<Badge color="info" className="mr-1">
-								{education.duration}
-							</Badge>
-							<p className="description mt-3">{education.desc}</p>
-							<ul>
-								{education.descBullets
-									? education.descBullets.map((desc) => {
-											return <li key={desc}>{desc}</li>;
-									  })
-									: null}
-							</ul>
-						</div>
-					</div>
-				</CardBody>
-			</Card>
-	);
-};
+export default function EducationCard({school}) {
 
-export default EducationCard;
+  const img_logo = {
+    "../assets/img/logo_maua.png": maua_logo
+  }
+
+  const imgRef = createRef();
+
+  const GetDescBullets = ({descBullets}) => {
+    return descBullets
+      ? descBullets.map((item, i) => (
+          <li key={i} className="subTitle">
+            {item}
+          </li>
+        ))
+      : null;
+  };
+  const {isDark} = "dark-mode";
+
+  return (
+    <>
+      <Fade left duration={500}>
+
+        <div className="education-card">
+        
+          <div className="education-card-left">
+            <img
+              crossOrigin={"anonymous"}
+              ref={imgRef}
+              className="education-img"
+              src={ img_logo[school.logo]}
+              alt={school.schoolName}
+            />
+          </div>
+          
+          <div className="education-card-right">
+            <h5 className="education-text-school">{school.schoolName}</h5>
+
+            <div className="education-text-details">
+              <h5
+                className={
+                  isDark
+                    ? "dark-mode education-text-subHeader"
+                    : "education-text-subHeader"
+                }
+              >
+                {school.subHeader}
+              </h5>
+              <p
+                className={`${
+                  isDark ? "dark-mode" : ""
+                } education-text-duration`}
+              >
+                {school.duration}
+              </p>
+              <p className="education-text-desc">{school.desc}</p>
+              <div className="education-text-bullets">
+                <ul>
+                  <GetDescBullets descBullets={school.descBullets} />
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </Fade>
+
+      <Slide left duration={700}>
+        <div className="education-card-border"></div>
+      </Slide>
+    </>
+  );
+}

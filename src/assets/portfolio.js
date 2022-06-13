@@ -1,5 +1,9 @@
 import emoji from "react-easy-emoji";
 
+export const illustration = {
+  animated: true // Set to false to use static SVG
+};
+
 export const greetings = {
 	name: "Matheus Mandotti",
 	title: "Olá, eu sou o Matheus",
@@ -131,23 +135,7 @@ export const SkillBars = [
 	}
 ];
 
-export const educationInfo = [
-	{
-		schoolName: "Instituto Mauá de Tecnologia",
-		subHeader: "Bacharel em Engenharia de Computação",
-		duration: "Fevereiro 2016 - Dezembro 2020",
-		desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-		descBullets: [
-			"Lorem ipsum dolor sit amet, consectetur adipdfgiscing elit",
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-		],
-	}
-
-	
-];
-
-export const educationInfo2 = {
-  display: true, // Set false to hide this section, defaults to true
+export const educationInfo = {
   schools: [
     {
       logo: "../assets/img/logo_maua.png",
@@ -198,7 +186,7 @@ export const experience = [
 		company: "SETIS - Automação e Sistemas",
 		companylogo: "../assets/img/icons/common/logo_setis.png",
 		backgroundColor: "#00006A",
-		date: "Setembro 2020 – Agosto 2021",
+		date: "Fevereiro 2019 – Setembro 2020",
 		desc: "Atuei como desenvolvedor Android focado em soluções de ponto de captura para pagamentos.",
 		descBullets: [
 			"Coloquei em prática meus conhecimentos de Engenharia de Software e metodologia Agil time.",
@@ -240,3 +228,24 @@ export const feedbacks = [
 			"the website is very nice, everything was perfectly made as i need. it just loads in moments, without giving u the chance to wait. the quality is also very amazing. i am using it without any problem. great job",
 	},
 ];
+
+export const contactInfo = {
+  title: emoji("Contact Me ☎️"),
+  subtitle:
+    "Discuss a project or just want to say hi? My Inbox is open for all.",
+  number: "+92-3243454077",
+  email_address: "saadpasta70@gmail.com"
+};
+
+export const socialMediaLinks = {
+  github: "https://github.com/saadpasta",
+  linkedin: "https://www.linkedin.com/in/saadpasta/",
+  gmail: "saadpasta70@gmail.com",
+  gitlab: "https://gitlab.com/saadpasta",
+  facebook: "https://www.facebook.com/saad.pasta7",
+  medium: "https://medium.com/@saadpasta",
+  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  // Instagram, Twitter and Kaggle are also supported in the links!
+  // To customize icons and social links, tweak src/components/SocialMedia
+  display: true // Set true to display this section, defaults to false
+};
