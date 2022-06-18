@@ -42,7 +42,7 @@ const Greetings = () => {
 
 									<SocialLinks />
 									
-									<div className="btn-wrapper my-4">
+									{/* <div className="btn-wrapper my-4">
 										<Button
 											className="btn-white btn-icon mb-3 mb-sm-0 ml-1"
 											color="default"
@@ -55,7 +55,8 @@ const Greetings = () => {
 												Aqui está meu CV
 											</span>
 										</Button>
-									</div>
+									</div> */}
+
 								</Col>
 								<Col lg="6">
 									<GreetingLottie animationPath="../assets/lottie/coding.json" />

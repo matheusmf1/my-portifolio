@@ -155,7 +155,7 @@ export const educationInfo = {
 export const experience = [
 
 	{
-		role: "Tech Lead / Desenvolvedor FullStack Pleno",
+		role: "Tech Lead / Arquiteto de Soluções / Software Engineer",
 		company: "IBM",
 		companylogo: "../assets/img/icons/common/ibm.png",
 		backgroundColor: "rgb(28, 20, 28)",

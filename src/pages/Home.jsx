@@ -1,5 +1,4 @@
 import { React, Component } from "react";
-import PropTypes from "prop-types";
 
 import SEO from "../components/SEO";
 import Greetings from "../containers/Greetings/Greetings";
@@ -9,7 +8,7 @@ import Education from "../containers/Education/Education";
 import Experience from "../containers/Experience";
 import Projects from "../containers/Projects";
 import Feedbacks from "../containers/Feedbacks";
-import Contact from "../containers/Contact/Contact"
+import Contact from "../containers/Contact/Contact";
 
 import { Header } from "../components/Header/Header";
 
@@ -22,7 +21,7 @@ export class Home extends Component {
 			<Header/>
 			<Greetings />
 			<Skills />
-			<Proficiency />
+			{/* <Proficiency /> */}
 			<Education />
 			<Experience />
 			{/* <Projects /> */}
