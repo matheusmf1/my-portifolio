@@ -1,5 +1,4 @@
 import { React, Component } from "react";
-// import dynamic from "next/dynamic";
 import PropTypes from "prop-types";
 
 import SEO from "../components/SEO";
@@ -18,7 +17,7 @@ export class Home extends Component {
 
 	render() {
 		return (
-			<div>
+		<div>
 			<SEO/>
 			<Header/>
 			<Greetings />
